@@ -9,7 +9,18 @@ query {
 # for createEvent (something like create functionality with mongodb)
 mutation {
   createEvent(eventInput: {title: "title1", description: "dis1", price: 20}) {
+    _id
     title
     description
+  }
+}
+
+
+# for createUser (something like create functionality with mongodb)
+mutation {
+  createUser(userInput: {email: "test1@gmail.com", password: "test"}) {
+    email
+    password
+    _id
   }
 }
