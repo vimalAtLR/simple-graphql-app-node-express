@@ -1,0 +1,15 @@
+# for get array of events (something like find query in mongodb)
+query {
+  events {
+    title
+  }
+}
+
+
+# for createEvent (something like create functionality with mongodb)
+mutation {
+  createEvent(eventInput: {title: "title1", description: "dis1", price: 20}) {
+    title
+    description
+  }
+}
