@@ -24,3 +24,12 @@ mutation {
     _id
   }
 }
+
+# for login (something like passing data threw query params)
+query {
+  login(email: "test1@gmail.com", password: "test@123") {
+    _id
+    token
+    tokenExpiration
+  }
+}
